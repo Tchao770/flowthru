@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./home";
+import Tests from "./tests";
 import NotFound from "./notFound";
 
 class AppRouter extends React.Component {
@@ -8,7 +9,8 @@ class AppRouter extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
+                <Route exact path="/" component={Home} />
+                <Route exact path="/Tests" component={Tests} />
           <Route exact component={NotFound} />
         </Switch>
       </Router>

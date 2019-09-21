@@ -10,7 +10,9 @@ function Home() {
       <header className="home-header">
         <img src={logo} className="home-logo" alt="logo" />
         <h1>flowthru</h1>
-        <a href="https://github.com/flow-thru/flowthru" className="home-link"><FontAwesomeIcon name='github' /> contribute</a>
+              <a href="https://github.com/flow-thru/flowthru" className="home-link"><FontAwesomeIcon name='github' /> contribute</a>
+              <a href="/tests" className="home-link"><FontAwesomeIcon name='frontend' /> More Tests</a>
+
       </header>
     </div>
   );
