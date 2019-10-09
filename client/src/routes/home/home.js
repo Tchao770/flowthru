@@ -2,7 +2,7 @@ import React from "react";
 
 import FontAwesomeIcon from 'react-fontawesome'
 import logo from "../../img/flow_plain.png";
-import "./home.css";
+import "../home/home.css";
 
 function Home() {
   return (
