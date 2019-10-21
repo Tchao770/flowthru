@@ -10,6 +10,7 @@ import (
 	"server/internal/platform/auth"
 )
 
+//Test
 var (
     pgsqlCreds = fmt.Sprintf(
         "host=%s port=%s user=%s password=%s dbname=%s sslmode=disable",
