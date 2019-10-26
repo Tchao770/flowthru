@@ -20,6 +20,8 @@ const NavBar = () => {
         <span>
           <Link to="/">Home</Link>&nbsp;
           <Link to="/profile">Profile</Link>
+          {/*Add a link to the /external-api route */}
+          <Link to="/external-api">External API</Link>
         </span>
       )}
       {isAuthenticated && <button onClick={() => logout()}>Log out</button>}
