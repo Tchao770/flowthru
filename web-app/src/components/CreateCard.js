@@ -9,7 +9,7 @@ class CreateCard extends React.Component {
                 <Typography.Title level={4}>Home</Typography.Title>
                 <p>Home is a place to explore and engage in the communities you are part of. Expand the platform by creating your own events and communities!</p>
                 <Button type='primary' block={true}>Create Event</Button>
-                <div style={{'padding-top': '12px'}}>
+                <div style={{paddingTop: '12px'}}>
                     <Button block={true}>Create Community</Button>
                 </div>
             </Card>

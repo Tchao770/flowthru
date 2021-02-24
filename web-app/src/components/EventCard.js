@@ -12,7 +12,7 @@ class EventCard extends React.Component {
                 </Space>
 
                 <Card size='small' bordered={false}>
-                    <img style={{float:'right', 'padding-left':'10px'}}
+                    <img style={{float:'right', paddingLeft:'10px'}}
                         alt="example"
                         src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
                     />

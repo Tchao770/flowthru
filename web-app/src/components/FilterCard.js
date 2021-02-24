@@ -16,20 +16,20 @@ class FilterCard extends React.Component {
                     <Col flex={2}>
                         <Radio.Group defaultValue="popular" style={{width: '100%'}}>
                             <Space size='middle'>
-                                <Radio.Button value="popular" style={{'border-radius': '15px'}}>
+                                <Radio.Button value="popular" style={{borderRadius: '15px'}}>
                                     <span><FireOutlined /> Popular </span>
                                 </Radio.Button>
-                                <Radio.Button value="active" style={{'border-radius': '15px'}}>
+                                <Radio.Button value="active" style={{borderRadius: '15px'}}>
                                     <span><TeamOutlined /> Active</span>
                                 </Radio.Button>
-                                <Radio.Button value='new' style={{'border-radius': '15px'}}>
+                                <Radio.Button value='new' style={{borderRadius: '15px'}}>
                                     <span><HistoryOutlined /> New</span>
                                 </Radio.Button>
                             </Space>
                         </Radio.Group>
                     </Col>
                     <Col flex={2}>
-                        <Select mode='tags' placeholder='Tags' style={{'min-width': '200px', width:'100%'}}>
+                        <Select mode='tags' placeholder='Tags' style={{minWidth: '200px', width:'100%'}}>
                             {children}
                         </Select>
                     </Col>

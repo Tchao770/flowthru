@@ -6,7 +6,6 @@ import ContentSelect from '../components/ContentSelect'
 import AvatarMenu from '../components/AvatarMenu'
 import logo from '../assets/img/banner_logo.svg'
 import { BellOutlined, MessageOutlined, PlusOutlined } from '@ant-design/icons'
-import { Link } from 'react-router-dom'
 
 function Nav(props) {
     const componentRef = useRef()

@@ -1,12 +1,11 @@
 
 import React from 'react'
-import { Dropdown, Menu, Button} from 'antd';
+import { Dropdown, Menu, Button } from 'antd';
 import { OrderedListOutlined, RiseOutlined, HomeOutlined, CaretDownOutlined } from '@ant-design/icons'
-
 
 function PageMenu(props) {
     return (
-        <Menu style={{ height:'350px', 'overflow-y':'auto' }}>
+        <Menu style={{ height: '350px', overflowY: 'auto' }}>
             <Menu.ItemGroup title="Feeds">
                 <Menu.Item key="home" icon={< HomeOutlined />}>Home</Menu.Item>
                 <Menu.Item key="popular" icon={<RiseOutlined />}>Popular</Menu.Item>
@@ -32,11 +31,12 @@ function PageMenu(props) {
 }
 
 class ContentSelect extends React.Component {
-    render () {
+    render() {
         return (
             <Dropdown overlay={PageMenu} >
                 <Button size='large' block={true}>
-                        <span style={{float:'left'}}><HomeOutlined /> Home</span>  <span style={{float:'right'}}><CaretDownOutlined /></span>
+                    <span style={{ float: 'left' }}><HomeOutlined /> Home</span>
+                    <span style={{ float: 'right' }}><CaretDownOutlined /></span>
                 </Button>
             </Dropdown>
         )

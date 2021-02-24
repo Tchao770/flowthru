@@ -5,14 +5,14 @@ import { RiseOutlined } from '@ant-design/icons'
 
 function TrendCard(props) {
     var s1  = {
-        'padding-top':5,
-        'padding-bottom':5,
+        paddingTop:5,
+        paddingBottom:5,
         width: props.width - 50,
         margin: 'auto'
     }
     var s2  = {
-        'padding-top':5,
-        'padding-bottom':5,
+        paddingTop:5,
+        paddingBottom:5,
     }
     return (
             <div style={s1}>
@@ -33,7 +33,7 @@ function TrendCard(props) {
 
 function TrendMenu(props) {
     return (
-        <Menu style={{ height:'400px', 'overflow-y':'auto' }}>
+        <Menu style={{ height:'400px', overflowY:'auto' }}>
             <Menu.ItemGroup title="Trending Today">
                 <TrendCard width={props.width}/>
                 <TrendCard width={props.width}/>

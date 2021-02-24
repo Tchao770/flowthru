@@ -4,15 +4,19 @@ import { Dropdown, Menu, Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 
 
+const MenuItemExtracted = props => {
+    return <Menu {...props}>{props.children} </Menu>
+}
+
 function PageMenu(props) {
     return (
-        <Menu >
-            <Menu.ItemGroup title={props.username}>
+        <Menu {...props}>
+            <Menu.ItemGroup  title={props.username}>
                 <Link to="/profile">
-                    <Menu.Item key="profile">Profile</Menu.Item>
+                    <Menu.Item  key="profile">Profile</Menu.Item>
                 </Link>
-                <Menu.Item key="events">User Settings</Menu.Item>
-                <Menu.Item key="logout">Log Out</Menu.Item>
+                <Menu.Item  key="events">User Settings</Menu.Item>
+                <Menu.Item  key="logout">Log Out</Menu.Item>
             </Menu.ItemGroup>
         </Menu>
     );
