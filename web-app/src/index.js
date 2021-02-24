@@ -7,6 +7,7 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import Nav from './layouts/Nav'
 import Home from './pages/Home'
+import Profile from './pages/Profile';
 import Footer from './layouts/Footer'
 
 
@@ -20,7 +21,10 @@ ReactDOM.render((
         />
 
         <Switch>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
+            <Route path="/profile" >
+                <Profile />
+            </Route>
         </Switch>
 
         <Footer />

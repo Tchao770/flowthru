@@ -1,17 +1,18 @@
 
-import React, {useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { Row, Col, Space, Button } from 'antd'
 import ContentSearch from '../components/ContentSearch'
 import ContentSelect from '../components/ContentSelect'
 import AvatarMenu from '../components/AvatarMenu'
 import logo from '../assets/img/banner_logo.svg'
 import { BellOutlined, MessageOutlined, PlusOutlined } from '@ant-design/icons'
+import { Link } from 'react-router-dom'
 
-function Nav(props){
+function Nav(props) {
     const componentRef = useRef()
-    const { width,  } = useContainerDimensions(componentRef)
+    const { width, } = useContainerDimensions(componentRef)
     return (
-        <Row style={{minHeight:80 , paddingRight:20, paddingLeft:20, paddingBottom:10}} align='middle'>
+        <Row style={{ minHeight: 80, paddingRight: 20, paddingLeft: 20, paddingBottom: 10 }} align='middle'>
             {/* Logo */}
             <Col className='navitem'>
                 <div>
@@ -22,7 +23,7 @@ function Nav(props){
             </Col>
 
             {/* Page Select */}
-            <Col className='navitem' flex={1} style={{minWidth:225}}>
+            <Col className='navitem' flex={1} style={{ minWidth: 225 }}>
                 <ContentSelect />
             </Col>
 
@@ -36,14 +37,14 @@ function Nav(props){
 
             {/* Profile */}
             <Col className='navitem'>
-                    <Space size='middle'>
-                        <Button shape='circle' style={{border:'none'}} icon={<PlusOutlined />}/>
-                        <Button shape='circle' style={{border:'none'}} icon={<MessageOutlined />}/>
-                        <Button shape='circle' style={{border:'none'}} icon={<BellOutlined />}/>
-                        <AvatarMenu 
-                            username={props.username}
-                        />
-                    </Space>
+                <Space size='middle'>
+                    <Button shape='circle' style={{ border: 'none' }} icon={<PlusOutlined />} />
+                    <Button shape='circle' style={{ border: 'none' }} icon={<MessageOutlined />} />
+                    <Button shape='circle' style={{ border: 'none' }} icon={<BellOutlined />} />
+                    <AvatarMenu
+                        username={props.username}
+                    />
+                </Space>
             </Col>
         </Row>
     );

@@ -1,13 +1,16 @@
 
 import React from 'react'
 import { Dropdown, Menu, Avatar } from 'antd';
+import { Link } from 'react-router-dom';
 
 
 function PageMenu(props) {
     return (
         <Menu >
             <Menu.ItemGroup title={props.username}>
-                <Menu.Item key="profile">Profile</Menu.Item>
+                <Link to="/profile">
+                    <Menu.Item key="profile">Profile</Menu.Item>
+                </Link>
                 <Menu.Item key="events">User Settings</Menu.Item>
                 <Menu.Item key="logout">Log Out</Menu.Item>
             </Menu.ItemGroup>
@@ -16,10 +19,10 @@ function PageMenu(props) {
 }
 
 class ContentSelect extends React.Component {
-    render () {
+    render() {
         return (
             <Dropdown overlay={PageMenu(this.props)}>
-                <Avatar style={{cursor:'pointer' }} size="large" icon={this.props.userIcon} />
+                <Avatar style={{ cursor: 'pointer' }} size="large" icon={this.props.userIcon} />
             </Dropdown>
         )
     };
